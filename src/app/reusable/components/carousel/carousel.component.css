@@ -1,0 +1,79 @@
+hr {
+  max-width: 50%;
+}
+
+carousel {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.carousel-cell {
+  padding: 1rem;
+  position: relative;
+  background-color: #e3e3e3 !important;
+}
+
+
+.carousel-cell img {
+  max-width: 30%;
+  height: 30%;
+  margin-top: 1rem;
+}
+
+.name-insect {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px;
+  position: absolute;
+  bottom: 15rem;
+  left: 0;
+  right: 0;
+  max-height: 30%;
+}
+
+.content-description {
+  min-height: 11rem;
+  max-height: 30%;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: 4.2rem;
+  left: 0;
+  right: 0;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: left !important;
+  margin: 0 auto;
+}
+
+.button-about-bug {
+  position: absolute;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: .3s;
+  border: none;
+  box-shadow: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .button-about-bug {
+    padding: 10px 15px;
+  }
+}
+
+.button-about-bug:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}

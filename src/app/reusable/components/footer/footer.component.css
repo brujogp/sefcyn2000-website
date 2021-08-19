@@ -1,0 +1,287 @@
+hr {
+  color: white;
+  width: 100%;
+}
+
+.responsive-container {
+  background-color: #374f81;
+  margin-top: 3rem;
+}
+
+/*** Web ***/
+
+.pc-first-level {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pc-first-level h4 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pc-first-level a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  margin-left: .6rem;
+  position: relative;
+}
+
+.pc-first-level a:after {
+  content: '';
+  bottom: -.7rem;
+  position: absolute;
+  width: 100%;
+  border: 1px solid white;
+  opacity: .1;
+  left: 0;
+}
+
+.pc-for-background {
+  background-color: #2d4068;
+  padding: 1rem;
+}
+
+/*Second level*/
+.pc-second-level {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.pc-company-info nav a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.pc-copyright-info {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.pc-copyright-info p {
+  opacity: .5;
+  color: #95a3cd;
+  margin: 0 1rem 0 0;
+}
+
+.pc-copyright-info nav a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/*** Fin de web ***/
+
+/*** Tablet ***/
+
+.tablet-first-level {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tablet-first-level h4 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tablet-first-level a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  margin-left: .6rem;
+  position: relative;
+}
+
+.tablet-first-level a:after {
+  content: '';
+  bottom: -.7rem;
+  position: absolute;
+  width: 100%;
+  border: 1px solid white;
+  opacity: .1;
+  left: 0;
+}
+
+.tablet-second-level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.tablet-company-info {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tablet-company-info nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tablet-company-info nav a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-right: 1.3rem;
+}
+
+.tablet-company-info nav a:last-of-type {
+  margin-right: 0;
+}
+
+.tablet-copyright-info {
+  display: flex;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+}
+
+.tablet-copyright-info p {
+  opacity: .5;
+  color: #95a3cd;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.tablet-copyright-info nav a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+/*** Fin de Tablet ***/
+
+/*** Phone ***/
+
+.phone-for-background {
+  background-color: #2d4068;
+  padding: 1rem;
+}
+
+.phone-first-level {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+}
+
+.phone-first-level h4 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.phone-first-level a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  margin-left: .6rem;
+  position: relative;
+}
+
+.phone-first-level a:after {
+  content: '';
+  bottom: -.7rem;
+  position: absolute;
+  width: 100%;
+  border: 1px solid white;
+  opacity: .1;
+  left: 0;
+}
+
+.phone-for-background {
+  background-color: #2d4068;
+  padding: 1rem;
+}
+
+/*Second level*/
+.phone-second-level {
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.phone-company-info nav {
+  text-align: center;
+}
+
+
+.phone-company-info nav a {
+  color: white;
+  margin-bottom: .8rem;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  display: block;
+}
+
+@media (min-width: 380px) {
+  .phone-company-info nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .phone-company-info nav a {
+    margin-bottom: 0;
+  }
+}
+
+.phone-copyright-info {
+  height: auto;
+}
+
+.phone-copyright-info p {
+  opacity: .5;
+  color: #95a3cd;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.phone-copyright-info nav {
+  text-align: center;
+  margin-bottom: .8rem;
+}
+
+@media (min-width: 380px) {
+
+  .phone-copyright-info nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.phone-copyright-info nav a {
+  color: white;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*** Fin de Phone ***/

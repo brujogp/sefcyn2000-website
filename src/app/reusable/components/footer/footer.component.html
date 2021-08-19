@@ -1,0 +1,189 @@
+<!-- Para PC -->
+<footer *ngIf="isWeb">
+  <div class="responsive-container">
+    <div class="pc-first-level">
+      <nav class="pc-info">
+        <h4>Información de interés</h4>
+        <a routerLink="/">Compromiso de Calidad</a>
+        <a routerLink="/">Nuestros clientes</a>
+        <a routerLink="/">Opiniones de Clientes</a>
+        <a routerLink="/">Preguntas Frecuentes</a>
+        <a routerLink="/">Normativas de Sefcyn 2000</a>
+        <a routerLink="/">Compromiso de Calidad</a>
+      </nav>
+
+      <nav class="pc-solutions">
+        <h4>Soluciones</h4>
+        <a routerLink="/">Compromiso de Calidad</a>
+        <a routerLink="/">Nuestros clientes</a>
+        <a routerLink="/">Opiniones de Clientes</a>
+        <a routerLink="/">Preguntas Frecuentes</a>
+        <a routerLink="/">Normativas de Sefcyn 2000</a>
+        <a routerLink="/">Compromiso de Calidad</a>
+      </nav>
+
+      <nav class="pc-team">
+        <h4>Equipo de Sefcyn 2000</h4>
+        <a routerLink="/">Compromiso de Calidad</a>
+        <a routerLink="/">Nuestros clientes</a>
+        <a routerLink="/">Opiniones de Clientes</a>
+        <a routerLink="/">Preguntas Frecuentes</a>
+        <a routerLink="/">Normativas de Sefcyn 2000</a>
+        <a routerLink="/">Compromiso de Calidad</a>
+      </nav>
+
+    </div>
+
+    <div class="pc-for-background">
+      <div class="pc-second-level">
+
+        <div class="pc-first-group">
+          <div class="pc-company-info">
+            <nav>
+              <a href="">Quiénes somos</a>
+              <a href="">Misión y Visión</a>
+              <a href="">Trabaja con Nostros</a>
+            </nav>
+            <hr>
+          </div>
+
+          <div class="pc-copyright-info">
+            <p>© 2021 por Sefcyn 2000</p>
+            <nav>
+              <a href="">Aviso Lega</a>
+              <a href="">Sobre las Cookies</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="pc-social-network">
+          <app-social-network-nav [color]="'#FFF'"></app-social-network-nav>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Para Tablets -->
+<footer *ngIf="isTablet">
+  <div class="responsive-container">
+    <div class="tablet-first-level">
+      <nav class="tablet-info">
+        <h4>Información de interés</h4>
+        <a routerLink="/">Compromiso de Calidad</a>
+        <a routerLink="/">Nuestros clientes</a>
+        <a routerLink="/">Opiniones de Clientes</a>
+        <a routerLink="/">Preguntas Frecuentes</a>
+        <a routerLink="/">Normativas de Sefcyn 2000</a>
+        <a routerLink="/">Compromiso de Calidad</a>
+      </nav>
+
+      <nav class="tablet-solutions">
+        <h4>Soluciones</h4>
+        <a routerLink="/">Compromiso de Calidad</a>
+        <a routerLink="/">Nuestros clientes</a>
+        <a routerLink="/">Opiniones de Clientes</a>
+        <a routerLink="/">Preguntas Frecuentes</a>
+        <a routerLink="/">Normativas de Sefcyn 2000</a>
+        <a routerLink="/">Compromiso de Calidad</a>
+      </nav>
+
+      <nav *ngIf="isTabletLandscape" class="tablet-team">
+        <h4>Equipo de Sefcyn 2000</h4>
+        <a routerLink="/">Compromiso de Calidad</a>
+        <a routerLink="/">Nuestros clientes</a>
+        <a routerLink="/">Opiniones de Clientes</a>
+        <a routerLink="/">Preguntas Frecuentes</a>
+        <a routerLink="/">Normativas de Sefcyn 2000</a>
+        <a routerLink="/">Compromiso de Calidad</a>
+      </nav>
+
+    </div>
+
+    <div class="tablet-second-level">
+
+      <div class="tablet-company-info">
+        <nav>
+          <a href="">Quiénes somos</a>
+          <a href="">Misión y Visión</a>
+          <a href="">Trabaja con Nostros</a>
+        </nav>
+      </div>
+
+      <div class="tablet-social-network">
+        <app-social-network-nav [color]="'#FFF'"></app-social-network-nav>
+      </div>
+      <hr>
+      <div class="tablet-copyright-info">
+        <nav>
+          <a href="">Aviso Lega</a>
+          <a href="">Sobre las Cookies</a>
+        </nav>
+
+        <p>© 2021 por Sefcyn 2000</p>
+      </div>
+
+
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Para Teléfonos-->
+<footer *ngIf="isHandset">
+  <div class="responsive-container">
+    <div class="phone-first-level">
+      <nav class="phone-info">
+        <h4>Información de interés</h4>
+        <a routerLink="/">Compromiso de Calidad</a>
+        <a routerLink="/">Nuestros clientes</a>
+        <a routerLink="/">Opiniones de Clientes</a>
+        <a routerLink="/">Preguntas Frecuentes</a>
+        <a routerLink="/">Normativas de Sefcyn 2000</a>
+        <a routerLink="/">Compromiso de Calidad</a>
+      </nav>
+
+      <nav *ngIf="isPhoneLandscape" class="phone-solutions">
+        <h4>Soluciones</h4>
+        <a routerLink="/">Compromiso de Calidad</a>
+        <a routerLink="/">Nuestros clientes</a>
+        <a routerLink="/">Opiniones de Clientes</a>
+        <a routerLink="/">Preguntas Frecuentes</a>
+        <a routerLink="/">Normativas de Sefcyn 2000</a>
+        <a routerLink="/">Compromiso de Calidad</a>
+      </nav>
+
+    </div>
+  </div>
+
+  <div class="phone-for-background">
+    <div class="phone-second-level">
+      <div class="phone-first-group">
+        <div class="phone-company-info">
+          <nav>
+            <a href="">Quiénes somos</a>
+            <a href="">Misión y Visión</a>
+            <a href="">Trabaja con Nostros</a>
+          </nav>
+          <hr>
+        </div>
+
+        <div class="phone-copyright-info">
+          <nav>
+            <a href="">Aviso Lega</a>
+            <a href="">Sobre las Cookies</a>
+          </nav>
+          <p>© 2021 por Sefcyn 2000</p>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="phone-social-network">
+          <app-social-network-nav [color]="'#FFF'"></app-social-network-nav>
+        </div>-->
+  </div>
+</footer>

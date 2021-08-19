@@ -1,0 +1,61 @@
+<div *ngIf="isWeb" class="pc-container" id="top-nav" #topNav>
+
+  <div class="pc-offset"></div>
+
+  <div class="pc-contact-nav">
+    <img src="https://cdn.soyjoctan.com/support/clients/sefcyn2000/logo.jpeg" alt="">
+    <nav class="pc-nav-contact">
+      <div class="pc-contact-option">
+        <i class="fas fa-phone-alt"></i>
+        <p>+52 00 0000 0000</p>
+      </div>
+      <div class="pc-contact-option">
+        <i class="far fa-envelope"></i>
+        <p>info@sefcyn2000.com</p>
+      </div>
+      <div class="pc-contact-option">
+        <i class="far fa-clock"></i>
+        <p>00:00 - 00:00</p>
+      </div>
+      <app-social-network-nav [color]="'#7D8DB5'"></app-social-network-nav>
+    </nav>
+
+  </div>
+
+  <div class="pc-second-nav" id="second-nav">
+    <div class="pc-container-for-flex">
+      <nav class="pc-main-nav">
+        <a routerLink="" routerLinkActive="pc-selected" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+        <a routerLink="/sobre-nosotros" routerLinkActive="pc-selected">Quiénes somos</a>
+        <a routerLink="/visión" routerLinkActive="pc-selected">Visión</a>
+        <a routerLink="/tratamientos" routerLinkActive="pc-selected">Tratamientos</a>
+
+        <app-sub-sections-helper [nameElement]="'Servicios'" [heightTopNav]="heightNavTop"
+                                 [subElements]="topMenuServices"></app-sub-sections-helper>
+
+        <a>Desinfección COVID-19</a>
+
+        <app-sub-sections-helper [subElements]="topMenuEquipment" [heightTopNav]="heightNavTop"
+                                 [nameElement]="'Equipos'"></app-sub-sections-helper>
+
+        <app-branch-office [nameElement]="'Sucursales'" [subElements]="branchOffices"></app-branch-office>
+      </nav>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Para Tablet -->
+<div *ngIf="isTablet" id="top-nav">
+  <div class="tablet-container" [@animationMenuTrigger]="show ? 'show' : 'hidden'">
+    <i class="fas fa-bars" (click)="showHiddenMenu()"></i>
+    <nav class="tablet-main-nav" [@animationMenuItems]="show ? 'show' : 'hidden'" id="menuNav">
+      <a routerLink="" (click)="showHiddenMenu()">Inicio</a>
+      <a routerLink="" (click)="showHiddenMenu()">Quiénes somos</a>
+      <a routerLink="" (click)="showHiddenMenu()">Visión</a>
+    </nav>
+  </div>
+</div>
+
+

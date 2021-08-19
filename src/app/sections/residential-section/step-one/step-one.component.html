@@ -1,0 +1,97 @@
+<div class="container" id="StOn">
+  <div class="content-flex" style="max-width: 70%">
+    <p class="instructions-desktop">Ayúdenos a comprender su problema</p>
+    <p class="you-know-desktop">Seleccione la zona en donde identificó plaga</p>
+  </div>
+  <div id="interform" class="interactive-form">
+
+    <div class="item-interctive-form">
+      <p>Cocina</p>
+      <img id="cocina" (click)="pressImage(imgRoom1)" #imgRoom1
+           src="https://cdn.soyjoctan.com/support/clients/sefcyn2000/room2.png" alt="">
+    </div>
+
+    <div class="item-interctive-form">
+      <p>Baño</p>
+      <img id="baño" (click)="pressImage(imgRoom2)" #imgRoom2
+           src="https://cdn.soyjoctan.com/support/clients/sefcyn2000/bathroom.png" alt="">
+    </div>
+
+    <div class="item-interctive-form">
+      <p>Habitación</p>
+      <img id="cuarto" (click)="pressImage(imgRoom4)" #imgRoom4
+           src="https://cdn.soyjoctan.com/support/clients/sefcyn2000/room1.png" alt="">
+    </div>
+
+    <div class="item-interctive-form">
+      <p>Jardin</p>
+      <img id="jardin" (click)="pressImage(imgRoom5)" #imgRoom5
+           src="https://cdn.soyjoctan.com/support/clients/sefcyn2000/garden.png" alt="">
+    </div>
+    <div class="item-interctive-form">
+      <p>Estancia</p>
+      <img id="estancia" (click)="pressImage(imgRoom6)" #imgRoom6
+           src="https://cdn.soyjoctan.com/support/clients/sefcyn2000/estancia.png" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- Versión para celulares -->
+<ng-template #forMobile>
+  <div class="title-mobile">
+    <h3>Área residencial</h3>
+    <hr>
+  </div>
+
+  <div class="container-mobile content-container">
+    <p>El sector recidencial representa el segmento más importante para Sefcyn 2000, ya que
+      nuestra trayectoria empresarial se cimentó sobre la base de ofrecer soluciones para el
+      hogar, con un algo grado de diferenciación respecto a la competencia. Nuestro
+      compromiso desde 1963, ha consistido en ofrecer servicios de la más <span>"alta calidad al
+      menor precio posible"</span>, de esta manera hemos obtenido la preferencia permanente de
+      nuestros clientes y socios comerciales.</p>
+
+    <p>El compromiso al brindar cada uno de nuestros servicios, representa la oportunidad para
+      resaltar nuestros valores comerciales y garantizar la mejor atención de parte de nuestro
+      personal operativo, ventas y servicio al cliente.</p>
+
+    <div class="content-grid">
+      <p class="you-know-mobile">Los organismos plaga representan
+        Vectores Transmisores de Enfermedades que Afectan a Nuestra
+        Familia y Nuestra Mascotas.</p>
+    </div>
+  </div>
+
+  <!--Descripción de servicios-->
+  <div class="description-services">
+    <h3 class="tittle">Nuestros servicios se caracterizan por</h3>
+    <hr>
+    <div class="container-service">
+      <img src="assets/images/inspec.jpeg" alt="">
+      <p>Un especialista de servicio visitará su hogar para
+        efectuar una inspección minuciosa y le ofrecerá un
+        diagnostico: tipo de plaga, riesgos, grado de
+        infestación y causa probable de contagio.</p>
+    </div>
+
+    <div class="container-service">
+      <img src="assets/images/inspec2.jpeg" alt="">
+      <p>Partiendo del Diagnostico, su especialista le mostrará
+        las alternativas viables de acuerdo a su necesidad y
+        presupuesto. Todos nuestros tratamientos incluyen:
+        métodos de control, medidas correctivas y
+        preventivas y fichas técnicas informativas de los
+        activos que se utilizarán en su hogar.</p>
+    </div>
+
+    <div class="container-service">
+      <img src="assets/images/gar.png" alt="">
+      <p>Nuestra póliza de servicio explica la problemática de
+        plaga, el mejor tratamiento y el modelo de garantía
+        que ofrecemos, por escrito.</p>
+    </div>
+  </div>
+  <!--Fin de descripción de servicios-->
+  <p class="instructions-mobile">Seleccione el sitio donde identificó la plaga</p>
+</ng-template>
+<!-- Fin de la definición de la versión para celulares -->

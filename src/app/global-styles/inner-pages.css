@@ -1,0 +1,53 @@
+hr {
+  margin-top: 3rem;
+  border: 1px dot-dash black;
+}
+
+
+
+h4 {
+  font-size: 1.8rem;
+  color: #374f81;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: .3rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+  color: #374f81;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: .3rem;
+}
+
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Sector profesional */
+.content-page-with-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.sections {
+  grid-column: 5/13;
+  max-width: 100%;
+}
+
+app-relational-pages {
+  grid-column: 1 / 4;
+}
+
+.main-content {
+  grid-column: 5 / 13;
+}
+
+.sections p {
+  line-height: 1.4rem;
+  color: #727272;
+}
+

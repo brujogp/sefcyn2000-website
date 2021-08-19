@@ -1,0 +1,21 @@
+<!--Empieza el carusel-->
+<carousel [height]="heightCarousel" [cellsToShow]="numberElements"
+          [arrows]="false" [autoplay]="true" [loop]="true"
+          [autoplayInterval]="2500"
+          [transitionTimingFunction]="'ease-in-out'"
+          [transitionDuration]="1000" [pauseOnHover]="true">
+
+  <div class="carousel-cell" *ngFor="let infoItem of info">
+    <div class="content-carousel-cell" id="store"
+         [attr.style]="'background-image: url(' + infoItem.urlImage +')'">
+      <div class="ccc">
+        <h4>{{infoItem.title}}</h4>
+        <p>{{infoItem.content}}</p>
+        <a [href]="infoItem.goToUrl">{{infoItem.titleGoToUrl}}</a>
+      </div>
+    </div>
+  </div>
+
+</carousel>
+<!--Termina el carrusle-->
+

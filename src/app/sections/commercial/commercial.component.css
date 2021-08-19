@@ -1,0 +1,136 @@
+carousel {
+  margin-top: 3rem;
+  z-index: 10 !important;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container h3 {
+  color: #374f81;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 7px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.container p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.carousel-cell {
+  width: auto;
+  display: inline;
+}
+
+#store {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://cdn.soyjoctan.com/support/clients/sefcyn2000/stores.jpg");
+}
+
+
+#restaurant {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://cdn.soyjoctan.com/support/clients/sefcyn2000/restauran.jpg");
+}
+
+#hotel {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://cdn.soyjoctan.com/support/clients/sefcyn2000/hotel.jpg");
+}
+
+#cinema {
+  height: 100%;
+  width: 100%;
+  background-position-x: -23rem !important;
+  background-image: url("https://cdn.soyjoctan.com/support/clients/sefcyn2000/cinema.jpg");
+}
+
+#dental {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://cdn.soyjoctan.com/support/clients/sefcyn2000/dental.jpg");
+}
+
+#office {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://cdn.soyjoctan.com/support/clients/sefcyn2000/office.jpg");
+}
+
+.content-carousel-cell {
+  position: relative;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-carousel-cell:after {
+  content: '';
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8169467616148022) 33%, rgba(0, 0, 0, 0.04103639746914389) 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.content-carousel-cell h4 {
+  color: white;
+  z-index: 3;
+  position: relative;
+  font-size: 1.9rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  text-align: left !important;
+  margin-left: 1rem;
+  margin-bottom: 12px;
+}
+
+.content-carousel-cell p {
+  color: white;
+  z-index: 3;
+  position: relative;
+  max-width: 85%;
+  font-size: 1rem;
+  margin: 0 auto 1rem auto;
+  line-height: 1.2rem;
+  text-align: left !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.content-carousel-cell a {
+  text-decoration: none;
+  background-color: #384347;
+  color: white;
+  z-index: 3;
+  position: relative;
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 1rem auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.ccc {
+  position: absolute;
+  bottom: 0;
+}

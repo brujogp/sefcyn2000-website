@@ -1,0 +1,8 @@
+<div class="branch-offices" (click)="isShowElements = !isShowElements" (mouseenter)="showElements()">
+  <a>{{nameElement}}</a>
+
+  <div class="points" *ngIf="isShowElements" (mouseleave)="hiddenElements()">
+    <p>Nuestras sucursales:</p>
+    <span *ngFor="let element of subElements">{{element}}</span>
+  </div>
+</div>

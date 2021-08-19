@@ -1,0 +1,85 @@
+<app-main-nav></app-main-nav>
+<app-header
+  [urlImageHeader]="'https://cdn.soyjoctan.com/support/clients/sefcyn2000/pests.jpeg'"
+  [isShowNav]="false"></app-header>
+
+<div class="container">
+  <h3>Información de su problema:</h3>
+  <hr>
+
+  <div class="cards-container">
+
+    <div *ngFor="let pest of pestsArray" class="card-container">
+      <h4>{{pest.name}}</h4>
+      <div class="row">
+        <div class="card-info">
+          <img [src]="pest.image_url" alt="">
+          <div class="content">
+            <p>{{pest.description}}</p>
+            <a [href]="urlToWhatsapp" target="_blank">Contáctanos</a>
+          </div>
+        </div>
+
+        <div class="card-tip">
+          <h5>Tip: Lorem ipsum dolor sit amet</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis dolor nec leo viverra
+            condimentum.
+            Quisque sodales lectus eu lectus semper pellentesque. </p>
+        </div>
+
+        <div class="card-tip">
+          <h5>Tip: Lorem ipsum dolor sit amet</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis dolor nec leo viverra
+            condimentum.
+            Quisque sodales lectus eu lectus semper pellentesque. </p>
+        </div>
+
+        <div class="card-tip">
+          <h5>Tip: Lorem ipsum dolor sit amet</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis dolor nec leo viverra
+            condimentum.
+            Quisque sodales lectus eu lectus semper pellentesque. </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div *ngFor="let pest of genderArray" class="card-container">
+      <h4>{{pest.name}}</h4>
+      <div class="row">
+        <div class="card-info">
+          <img [src]="pest.image_url" alt="">
+          <div class="content">
+            <p>{{pest.description}}</p>
+            <a [href]="urlToWhatsapp" target="_blank">Contáctanos</a>
+          </div>
+        </div>
+
+        <div class="card-tip">
+          <h5>Tip: Lorem ipsum dolor sit amet</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis dolor nec leo viverra
+            condimentum.
+            Quisque sodales lectus eu lectus semper pellentesque. </p>
+        </div>
+
+        <div class="card-tip">
+          <h5>Tip: Lorem ipsum dolor sit amet</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis dolor nec leo viverra
+            condimentum.
+            Quisque sodales lectus eu lectus semper pellentesque. </p>
+        </div>
+
+        <div class="card-tip">
+          <h5>Tip: Lorem ipsum dolor sit amet</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis dolor nec leo viverra
+            condimentum.
+            Quisque sodales lectus eu lectus semper pellentesque. </p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<app-footer id="footer" class="footer"></app-footer>

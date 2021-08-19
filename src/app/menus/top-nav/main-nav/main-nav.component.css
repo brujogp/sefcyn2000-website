@@ -1,0 +1,134 @@
+app-sub-sections-helper {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+app-branch-office {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+/*** Para Web ***/
+.pc-selected {
+  padding: .2rem .6rem;
+  border-radius: 20rem;
+  border: 2px solid white;
+}
+
+.pc-contact-nav {
+  width: 100%;
+  height: 4.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 9999 !important;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.pc-offset {
+  height: 7.5rem;
+}
+
+.pc-nav-contact {
+  display: flex;
+  align-items: center;
+}
+
+.pc-contact-option {
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  color: #7D8DB5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.pc-contact-option i {
+  margin-right: 5px;
+}
+
+.pc-contact-option p {
+  margin: 0;
+}
+
+.pc-second-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #395082;
+  width: 100%;
+  align-items: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 4.5rem;
+  height: 3rem;
+  z-index: 9999 !important;
+}
+
+.pc-container-for-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.pc-container-for-flex img {
+  margin-right: 2rem;
+  width: 5rem;
+}
+
+
+.pc-main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.pc-main-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.pc-main-nav a {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+.pc-contact {
+  background-color: #e5d6b1;
+  margin: 0 1rem 0 0;
+  border: none;
+  height: 60%;
+  padding: 10px 2rem;
+  border-radius: 3rem;
+  color: black;
+  text-decoration: none;
+}
+
+/*** Fin de Para Web ***/
+
+
+/*** Para Tablet***/
+
+.tablet-container {
+  width: 100%;
+  background-color: #395082;
+  padding: 1rem 1rem;
+}
+
+.tablet-container i {
+  color: white;
+  font-size: 2rem;
+}
+
+.tablet-container .tablet-main-nav a {
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+/*** Fin de Para Tablet***/

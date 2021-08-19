@@ -1,0 +1,14 @@
+<carousel *ngIf="pestsFromParent" class="children-carousel" [height]="heightCarousel" [cellsToShow]="numberElements"
+          [arrowsOutside]="true"
+          [arrowsTheme]="'dark'"
+          id="sc">
+
+  <div class="carousel-cell" *ngFor="let gender of pestsFromParent.gender; let i = index" [attr.data]="i">
+    <div class="content content-second-carousel">
+      <img [src]="gender.image_url" [alt]="'insecto ' + i">
+      <h3 class="name-insect" [innerHTML]="gender.name" [innerText]="gender.name | splitByFirstWord"></h3>
+      <p class="content-description">{{gender.description}}</p>
+    </div>
+    <button class="button-second-carousel" (click)="pressGender(i)">Seleccionar</button>
+  </div>
+</carousel>

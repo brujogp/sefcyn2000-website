@@ -1,0 +1,30 @@
+.steps {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  padding-left: 8rem;
+}
+
+@media (max-width: 600px) {
+  .steps {
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0;
+  }
+}
+
+.steps .step {
+  display: block;
+  color: white;
+  background-color: #374f81;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  margin-right: 1.4rem;
+  font-weight: bold;
+  padding: 1rem 1.2rem;
+  opacity: .5;
+}
+
+.current-step {
+  opacity: 1 !important;
+}

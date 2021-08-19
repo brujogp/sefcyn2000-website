@@ -1,0 +1,120 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto 1rem auto;
+
+}
+
+.tittle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: #374f81;
+  margin-left: 0
+}
+
+.header-container {
+  width: 100%;
+  background-color: #374f81;
+  text-align: left;
+}
+
+.header-container h3 {
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.4rem;
+}
+
+/*
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    margin: 0 auto 1.5rem auto;
+    height: auto;
+    width: 100%;
+  }
+
+  .content-container p {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+ */
+.resume {
+  display: flex;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  border: 1px solid #374f81;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.container-resume {
+  margin-left: 2rem;
+}
+
+.container-resume:first-of-type {
+  margin-left: 0;
+}
+
+.title-resume {
+  color: red;
+  margin-bottom: .6rem;
+}
+
+.content-resume {
+  padding-left: .6rem;
+  margin: .3rem;
+
+}
+
+
+.content-resume:last-of-type {
+  margin-bottom: 4rem;
+}
+
+.buttons {
+  position: absolute;
+  display: block;
+  bottom: 1rem;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.contactButtonWA {
+  right: 1rem;
+  background-color: #ff0000;
+}
+
+.add-pests {
+  background-color: black;
+}
+
+.resume-mobile {
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid #374f81;
+  position: relative;
+
+}
+
+.contactButtonWA-mobile {
+  font-size: 1.2rem !important;
+  text-decoration: none;
+  color: white;
+  background-color: #ff0000;
+  display: block;
+  text-align: center;
+  padding: 6px 10px;
+}

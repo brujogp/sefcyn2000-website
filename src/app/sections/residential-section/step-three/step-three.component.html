@@ -1,0 +1,42 @@
+<div class="container" *ngIf="currentStep === 3" xmlns="http://www.w3.org/1999/html">
+  <h3 class="tittle">Contáctenos</h3>
+  <div class="content-container">
+    <div class="header-container">
+      <h3>Resumen</h3>
+    </div>
+
+    <div *ngIf="!isMobile; else mobileResume" class="resume">
+
+      <div class="container-resume">
+        <p class="title-resume">Zona(s) de la casa:</p>
+        <p class="content-resume" *ngFor="let i of nameZonesHouse">{{i}}</p>
+      </div>
+
+      <div class="container-resume">
+        <p class="title-resume">Plaga:</p>
+        <p class="content-resume" *ngFor="let i of namePests">{{i}}</p>
+      </div>
+      <input (click)="addAnotherPest()" type="button" class="add-pests buttons" value="Agregar más plagas"/>
+
+      <!--<a [href]="urlToWhatsapp" target="_blank" class="contactButtonWA buttons">Contáctenos por Whatsapp</a>-->
+      <a routerLink="/pests" class="contactButtonWA buttons">Siguiente</a>
+    </div>
+
+  </div>
+
+  <ng-template #mobileResume>
+    <div class="resume-mobile">
+      <div class="headers-mobile">
+        <p><strong>Zona de la casa:</strong></p>
+        <p [innerHTML]="nameZonesHouse"></p>
+      </div>
+      <hr>
+      <div class="info-mobile">
+        <p><strong>Plaga:</strong></p>
+        <p [innerHTML]="namePests"></p>
+      </div>
+      <a routerLink="/pests" class="contactButtonWA-mobile">Siguiente</a>
+      <!--<a [href]="urlToWhatsapp" target="_blank" class="contactButtonWA-mobile">Contáctenos por Whatsapp</a>-->
+    </div>
+  </ng-template>
+</div>

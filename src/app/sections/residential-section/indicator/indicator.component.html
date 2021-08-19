@@ -1,0 +1,5 @@
+<div class="steps">
+  <div (click)="onClickInStep(step1)" #step1 [class.current-step]="currentStep === 1" class="step" id="step-1">1</div>
+  <div (click)="onClickInStep(step2)" #step2 [class.current-step]="currentStep === 2" class="step" id="step-2">2</div>
+  <div (click)="onClickInStep(step3)" #step3 [class.current-step]="currentStep === 3" class="step" id="step-3">3</div>
+</div>

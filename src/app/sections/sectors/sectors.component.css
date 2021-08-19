@@ -1,0 +1,39 @@
+app-carousel-image-cover {
+  margin: 2rem auto 0 auto;
+  grid-column: 5/12 !important;
+}
+
+
+
+
+.parent-section {
+  background-color: #e8eae8;
+  height: 100%;
+}
+
+.wider-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.introduction-to-sector {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.introduction-to-sector .title {
+  color: #374f81;
+  margin-top: .5rem;
+}
+
+.introductory-text {
+  line-height: 1.5rem;
+  color: #364145;
+}
+
+

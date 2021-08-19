@@ -1,0 +1,18 @@
+<nav class="sub-elements-nav">
+  <a routerLinkActive="selected" (mouseenter)="showElements()"
+     (mouseleave)="hiddenElements()">{{nameElement}}
+
+    <i class="selector fas fa-chevron-down" [style.opacity]="isShowElements ? '1' : '.3'"></i>
+
+    <i class="fas fa-caret-up selector-bottom animate__animated animate__fadeIn"
+       *ngIf="isShowElements"></i>
+
+    <div class="options animate__animated animate__fadeIn animate__faster" *ngIf="isShowElements"
+         (mouseenter)="showElements()">
+      <a class="sub-element-menu" *ngFor="let element of subElements; let i = index" [attr.data-index]="i"
+         (click)="navigateTo(i)">{{element.name}}</a>
+    </div>
+
+  </a>
+</nav>
+

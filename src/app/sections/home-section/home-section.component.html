@@ -1,0 +1,72 @@
+<app-main-nav></app-main-nav>
+<app-header [urlImageHeader]="imgUrl" [isShowNav]="true" [slogan]="slogan"></app-header>
+<section class="container main-section">
+  <div class="info">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc sapien, luctus ac ultrices vitae, mattis eu
+      risus. Nunc fringilla tellus vel orci dignissim pretium quis ut metus. Aenean porta felis in diam dapibus
+      faucibus. Cras ac condimentum risus. Mauris egestas ornare velit blandit porta. Duis suscipit vitae ante vel
+      efficitur.</p>
+  </div>
+
+  <h3>Quiénes somos</h3>
+  <hr>
+  <div class="about">
+    <img src="assets/images/info.jpeg" alt="">
+    <div class="about-content">
+      <p>Somos una empresa profesional en el segmento de Manejo Integral de Plagas, que se ha caracterizado por ofrecer
+        soluciones personalizadas. Nuestra amplia experiencia y preparación, nos han permitido lograr la confianza de
+        nuestros socios comerciales, mantieniendo siempre un compromiso absoluto y respeto por el medio abmiente y ética
+        profesional en cada actividad realizada. </p>
+      <a routerLink="/sobre-nosotros" class="know-more">Saber más</a>
+    </div>
+  </div>
+
+</section>
+
+<section class="container services-section" id="services">
+  <h3>Servicios</h3>
+  <hr>
+  <div class="services-list">
+    <div class="service-item" id="residential-section">
+      <img src="assets/images/fam.jpeg" alt="">
+      <div class="service-content">
+        <a routerLink="/residential"><h5>Residencial</h5></a>
+        <hr>
+        <p>Somos la mejor alternativa porque nuestros modelos de servicio se construyen pensando en la experiencia que
+          buscamos tenga cada uno de nuestros clientes a través de soluciones personalizadas. Desarrollamos modelos de
+          servicios de calidad superior, usamos la comunicación como el ingrediente perfecto para diseñar la mejor
+          solución.</p>
+
+        <a class="go-subsection" routerLink="/residential">Saber más</a>
+      </div>
+    </div>
+
+    <div class="service-item" id="commercial-section">
+      <img src="assets/images/rest.jpeg" alt="">
+      <div class="service-content">
+        <a routerLink="/commercial"><h5>Comercial</h5></a>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc sapien, luctus ac ultrices vitae, mattis
+          eu risus. Nunc fringilla tellus vel orci dignissim pretium quis ut metus. Aenean porta felis in diam dapibus
+          faucibus. Cras ac condimentum risus. Mauris egestas ornare velit blandit porta. Duis suscipit vitae ante vel
+          efficitur.</p>
+        <a class="go-subsection" routerLink="/commercial">Saber más</a>
+      </div>
+    </div>
+
+    <div class="service-item" id="industrial-section">
+      <img src="assets/images/ind.jpeg" alt="">
+      <div class="service-content">
+        <a href=""><h5>Industrial</h5></a>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc sapien, luctus ac ultrices vitae, mattis
+          eu risus. Nunc fringilla tellus vel orci dignissim pretium quis ut metus. Aenean porta felis in diam dapibus
+          faucibus. Cras ac condimentum risus. Mauris egestas ornare velit blandit porta. Duis suscipit vitae ante vel
+          efficitur.</p>
+        <a routerLink="/industrial" class="go-subsection">Saber más</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<app-footer id="footer" class="footer"></app-footer>

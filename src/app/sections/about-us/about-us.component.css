@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+}
+
+.container h3 {
+  color: #374f81;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 7px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}

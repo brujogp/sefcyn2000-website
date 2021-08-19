@@ -1,0 +1,112 @@
+<!-- PC -->
+<header id="header" [style.background-image]="'url(' + urlImageHeader + ')'"
+        class="pc-header"
+        *ngIf="isWeb">
+
+  <div class="pc-content">
+    <h1>SEFCYN 2000</h1>
+    <h2>Sistemas Ecológicos</h2>
+    <h3>Manejo Integrado de Plagas</h3>
+
+    <div *ngIf="slogan.length > 1" class="pc-conditional-elements">
+      <p [ngStyle]="{'bottom': (isShowNav) ? '1.5rem': '6rem'}">{{slogan}}</p>
+
+      <button *ngIf="!isShowNav" class="pc-init-button" (click)="scroll()">Comenzar</button>
+    </div>
+  </div>
+
+  <nav *ngIf="isShowNav" class="pc-sections-header-nav">
+    <div class="pc-nav-item">
+      <i class="fas fa-home"></i>
+      <br>
+      <a routerLink="/residential">Residenciales y condominios</a>
+    </div>
+
+    <div class="pc-nav-item">
+      <i class="fas fa-store-alt"></i>
+      <br>
+      <a routerLink="/commercial">Servicios comerciales</a>
+    </div>
+
+    <div class="pc-nav-item">
+      <i class="fas fa-industry"></i>
+      <br>
+      <a routerLink="/industrial">Servicios industria</a>
+    </div>
+  </nav>
+</header>
+
+
+<!-- Tablet -->
+<header *ngIf="isTablet">
+  <header id="header" class="tablet-header" [style.background-image]="'url(' + urlImageHeader + ')'">
+    <div class="tablet-content">
+      <h1>SEFCYN 2000</h1>
+      <h2>Sistemas Ecológicos</h2>
+      <h3>Manejo Integrado de Plagas</h3>
+      <div class="tablet-conditional-elements">
+        <p [ngStyle]="{'bottom': (isShowNav) ? '1.5rem': '6rem'}">{{slogan}}</p>
+        <a *ngIf="!isShowNav" class="tablet-init-button" href="#">Comenzar</a>
+      </div>
+
+    </div>
+
+    <nav *ngIf="isShowNav" class="tablet-sections-header-nav">
+      <div class="tablet-nav-item">
+        <i class="fas fa-home"></i>
+        <br>
+        <a routerLink="/residential">Residenciales y condominios</a>
+      </div>
+
+      <div class="tablet-nav-item">
+        <i class="fas fa-store-alt"></i>
+        <br>
+        <a routerLink="/commercial">Servicios comerciales</a>
+      </div>
+
+      <div class="tablet-nav-item" id="industry">
+        <i class="fas fa-industry"></i>
+        <br>
+        <a routerLink="/industrial">Seguridad Industrial</a>
+      </div>
+    </nav>
+  </header>
+</header>
+
+
+<!-- Phone -->
+<header *ngIf="isHandset">
+  <header id="header" class="phone-header" [style.background-image]="'url(' + urlImageHeader + ')'">
+    <div class="phone-content">
+      <h1>SEFCYN 2000</h1>
+      <h2>Sistemas Ecológicos</h2>
+      <h3>Manejo Integrado de Plagas</h3>
+      <div class="phone-conditional-elements">
+        <p>{{slogan}}</p>
+        <a *ngIf="!isShowNav" class="phone-init-button" href="#">Comenzar</a>
+      </div>
+
+    </div>
+
+    <nav *ngIf="isShowNav" class="phone-sections-header-nav">
+      <div class="phone-nav-item">
+        <i class="fas fa-home"></i>
+        <br>
+        <a routerLink="/residential">Protección Residencial</a>
+      </div>
+
+      <div class="phone-nav-item">
+        <i class="fas fa-store-alt"></i>
+        <br>
+        <a routerLink="/commercial">Póliza Comercial</a>
+      </div>
+
+      <div class="phone-nav-item" id="industry">
+        <i class="fas fa-industry"></i>
+        <br>
+        <a routerLink="/industrial">Seguridad Industrial</a>
+      </div>
+    </nav>
+
+  </header>
+</header>

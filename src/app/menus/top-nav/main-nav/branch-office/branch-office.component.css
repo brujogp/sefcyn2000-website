@@ -1,0 +1,47 @@
+p {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 1rem;
+}
+
+span {
+  color: white;
+  display: inline-block;
+  margin-right: 1rem;
+  white-space: nowrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  width: auto;
+}
+
+a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  z-index: 3;
+}
+
+.branch-offices {
+}
+
+.points {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+  bottom: -3.8rem;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  max-height: 4rem;
+  overflow-x: scroll;
+}
+
+.points span:last-of-type {
+  padding-right: 1rem;
+}

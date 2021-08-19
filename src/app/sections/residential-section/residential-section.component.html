@@ -1,0 +1,79 @@
+<app-main-nav></app-main-nav>
+<app-header [urlImageHeader]="imgUrl" [isShowNav]="false" [slogan]="slogan"></app-header>
+
+<section id="parent-section">
+  <div class="container-desktop" *ngIf="!isMobile">
+    <h3>Soluciones para el hogar y condominios</h3>
+    <hr>
+
+    <p>El sector recidencial representa el segmento más importante para Sefcyn 2000, ya que
+      nuestra trayectoria empresarial se cimentó sobre la base de ofrecer soluciones para el
+      hogar, con un algo grado de diferenciación respecto a la competencia. Nuestro
+      compromiso desde 1963, ha consistido en ofrecer servicios de la más <span>"alta calidad al
+      menor precio posible"</span>, de esta manera hemos obtenido la preferencia permanente de
+      nuestros clientes y socios comerciales.</p>
+
+    <p>El compromiso al brindar cada uno de nuestros servicios, representa la oportunidad para
+      resaltar nuestros valores comerciales y garantizar la mejor atención de parte de nuestro
+      personal operativo, ventas y servicio al cliente.</p>
+
+    <!--Descripción de servicios-->
+    <div class="description-services">
+      <h4 class="tittle">Nuestros servicios se caracterizan por</h4>
+      <hr>
+
+      <app-cards [dataForCards]="dataForCards"></app-cards>
+
+      <!--<div class="container-services">
+
+              <div class="container-service" id="card-step-1">
+                <img src="assets/images/inspec.jpeg" alt="">
+                <p>Un especialista de servicio visitará su hogar para
+                  efectuar una inspección minuciosa y le ofrecerá un
+                  diagnostico: tipo de plaga, riesgos, grado de
+                  infestación y causa probable de contagio.</p>
+              </div>
+
+              <div class="container-service" id="card-step-2">
+                <img src="assets/images/inspec2.jpeg" alt="">
+                <p>Partiendo del Diagnostico, su especialista le mostrará
+                  las alternativas viables de acuerdo a su necesidad y
+                  presupuesto. Todos nuestros tratamientos incluyen:
+                  métodos de control, medidas correctivas y
+                  preventivas y fichas técnicas informativas de los
+                  activos que se utilizarán en su hogar.</p>
+              </div>
+
+              <div class="container-service" id="card-step-3">
+                <img src="assets/images/gar.png" alt="">
+                <p>Nuestra póliza de servicio explica la problemática de
+                  plaga, el mejor tratamiento y el modelo de garantía
+                  que ofrecemos, por escrito.</p>
+              </div>
+            </div>-->
+
+    </div>
+
+    <!--Fin de descripción de servicios-->
+
+
+  </div>
+</section>
+
+<section>
+  <div id="step-one" *ngIf="currentStep === 1">
+    <app-step-one (infoFromStepOne)="infoToStepTwo = $event" (titleFromStepOne)="titleStepTwo = $event"></app-step-one>
+  </div>
+
+  <div id="step-two" *ngIf="currentStep === 2">
+    <app-step-two [pest]="titleStepTwo" [containerInfo]="infoToStepTwo"></app-step-two>
+  </div>
+
+  <div id="step-three" *ngIf="currentStep === 3">
+    <app-step-three></app-step-three>
+  </div>
+</section>
+
+<app-indicator (showStep1)="showStep1()"></app-indicator>
+
+<app-footer id="footer" class="footer"></app-footer>

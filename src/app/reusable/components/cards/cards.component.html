@@ -1,0 +1,10 @@
+<div class="cards-container">
+  <div class="card" *ngFor="let card of dataForCards; let i = index" [attr.data-index]="i">
+    <img [src]="card.urlImg" alt="" class="img-card">
+    <div class="content-card">
+      <h5 class="card-name">{{card.name}}</h5>
+      <p class="text-card" [innerHTML]="card.text"></p>
+    </div>
+    <a *ngIf="card.textLink" class="card-link" (click)="goTo(i)">{{card.textLink}}</a>
+  </div>
+</div>

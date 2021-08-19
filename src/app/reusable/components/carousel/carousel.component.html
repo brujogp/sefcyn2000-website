@@ -1,0 +1,18 @@
+<carousel [height]="heightCarousel" [cellsToShow]="numberElements" [arrowsOutside]="true"
+          [arrowsTheme]="'dark'">
+  <div class="carousel-cell" *ngFor="let pest of pests; let i = index" [attr.data]="i">
+    <div class="content">
+      <img [src]="pest.image_url" alt="insecto 1">
+      <h3 class="name-insect">{{pest.name}}</h3>
+      <p class="content-description">{{pest.description}}</p>
+
+      <button *ngIf="pest.gender.length == 0" (click)="pressPest(i)" class="button-about-bug">Seleccionar</button>
+      <button *ngIf="pest.gender.length > 0" (click)="showSecondCarousel(i)" class="button-about-bug">Saber más</button>
+
+    </div>
+  </div>
+</carousel>
+
+<div *ngIf="indexPestParent > -1">
+  <app-second-carousel [pestsFromParent]="pestToChildren" [indexFromParent]="indexPestParent"></app-second-carousel>
+</div>

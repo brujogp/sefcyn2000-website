@@ -1,0 +1,9 @@
+.social-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-nav i {
+  font-size: 1.5rem;
+  margin-right: .9rem;
+}
